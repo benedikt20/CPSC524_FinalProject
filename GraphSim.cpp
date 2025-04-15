@@ -221,3 +221,9 @@ int main(int argc, char** argv) {
 // In current location:
 // compile
 // g++-12 -std=c++17 -O2 GraphSim.cpp -o ergen 
+
+// Develop a undirected graph with <N> nodes and a probability of edge of <p>:
+// ./ergen <N> <p> graph.txt
+
+// Example N=1000 and p=0.01:
+// ./ergen 1000 0.01 graph_100_01.txt
