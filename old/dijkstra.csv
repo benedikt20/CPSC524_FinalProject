@@ -1,0 +1,9 @@
+Graph,Nodes,Edge_Probability,Sequential_Time_ms,Parallel_Time_ms,Speedup
+Graph_A,100,0.005,0.01,0.09,0.08
+Graph_B,100,0.02,0.01,0.07,0.13
+Graph_C,1000,0.00,0.14,2.09,0.07
+Graph_D,1000,0.01,0.23,3.62,0.06
+Graph_E,10000,0.00,1.61,354.62,0.00
+Graph_F,10000,0.00,9.89,314.40,0.03
+Graph_G,50000,0.00,8.61,7590.15,0.00
+Graph_H,50000,0.00,15.19,6991.04,0.00

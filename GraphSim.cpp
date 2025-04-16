@@ -214,6 +214,15 @@ int main(int argc, char** argv) {
         std::cerr << "Failed to save graph." << std::endl;
         return 1;
     }
+
+    // Output metrics
+    std::cout << "[METRICS_CSV],"
+          << n << "," 
+          << edge_count << ","
+          << avg_degree << ","
+          << diameter << ","
+          << clustering << "," 
+          << output_file << std::endl;
     
     return 0;
 }
