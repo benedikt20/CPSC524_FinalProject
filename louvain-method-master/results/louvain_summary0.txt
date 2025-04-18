@@ -1,0 +1,7 @@
+Graph Name	Nodes	Links	Modularity	Runtime (s)
+SBM_n10000_k50	10000	116928	0.308363	0.08
+SBM_n50000_k50	50000	2950256	0.106603	2.26
+SBM_n200000_k50	200000	47189820	0.126436	11.11
+SBM_n100000_k50	100000	11785730	0.0938993	6.83
+
+# Sequential algorithm, no parallelizations
