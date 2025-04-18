@@ -1,0 +1,11 @@
+Graph Name	Nodes	Links	Modularity	Runtime (s)
+SBM_n10000_k50	10000	116928	0.307929	0.68
+SBM_n50000_k50	50000	2950256	0.0976921	2.52
+SBM_n200000_k50	200000	47189820	0.125454	11.48
+SBM_n100000_k50	100000	11785730	0.0915187	11.59
+
+# parallelize the node-for loop
+# no dynamic scheduling, just plain
+# 
+# #pragma omp parallel for 
+# for (int node_tmp=0 ; node_tmp<size ; node_tmp++) {

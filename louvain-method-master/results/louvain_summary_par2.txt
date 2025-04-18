@@ -1,0 +1,42 @@
+Graph Name	Nodes	Links	Modularity	Runtime (s)
+SBM_n10000_k50	10000	116928	0.308399	0.35
+SBM_n50000_k50	50000	2950256	0.0978696	1.37
+SBM_n200000_k50	200000	47189820	0.12322	7.50
+SBM_n100000_k50	100000	11785730	0.09429	5.25
+
+
+# --------------------------------------------------------
+# no1:
+# parallelize the node-for loop
+# with dynamic scheduling:
+# 
+# #pragma omp parallel for schedule(dynamic)
+# for (int node_tmp=0 ; node_tmp<size ; node_tmp++) {
+# --------------------------------------------------------
+
+
+# --------------------------------------------------------
+# no2:
+# parallelize the modularity function:
+#
+# double Community::modularity() {
+#   double q = 0.;
+#   double m2 = (double)g.total_weight;
+  
+#   #pragma omp parallel
+#   {
+#       double q_local = 0.0;
+      
+#       #pragma omp for nowait
+#       for (int i=0; i<size; i++) {
+#           if (tot[i]>0)
+#               q_local += (double)in[i]/m2 - ((double)tot[i]/m2)*((double)tot[i]/m2);
+#       }
+      
+#       #pragma omp atomic
+#       q += q_local;
+#   }
+#   return q;
+# }
+# --------------------------------------------------------
+

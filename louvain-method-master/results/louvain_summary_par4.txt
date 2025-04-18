@@ -1,0 +1,20 @@
+Graph Name	Nodes	Links	Modularity	Runtime (s)
+SBM_n10000_k50	10000	116928	0.308568	0.30
+SBM_n50000_k50	50000	2950256	0.125234	1.68
+SBM_n200000_k50	200000	47189820	0.126688	7.15
+SBM_n100000_k50	100000	11785730	0.0948147	6.40
+
+
+# Additional from p3:
+
+# --------------------------------------------------------
+# no4:
+# parallelize the data initialization:
+#
+# #pragma omp parallel for
+#   for (int i=0 ; i<size ; i++) {
+#     n2c[i] = i;
+#     tot[i] = g.weighted_degree(i);
+#     in[i]  = g.nb_selfloops(i);
+#   }
+# --------------------------------------------------------
