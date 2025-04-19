@@ -17,6 +17,7 @@ Email    : jean-loup.guillaume@lip6.fr
 Location : Paris, France
 Time     : February 2008
 
+From https://github.com/riyadparvez/louvain-method 
 -----------------------------------------------------------------------------
 
 Disclaimer:

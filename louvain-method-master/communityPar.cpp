@@ -14,10 +14,12 @@
 // Location : New Haven CT
 // Time	    : April 2025
 //-----------------------------------------------------------------------------
-// To compile  : g++-12 -O2 -o community_par communityPar.cpp graph.cpp graph_binary.cpp main_community.cpp
+// To compile  : g++-12 -O2 -o community_par communityPar.cpp res/graph.cpp res/graph_binary.cpp res/main_community.cpp
 // To execute  : ./community_par input_file.bin -w weights_file.bin -v -o output_communities.txt
+//      - Only to execute a single file. 
+//      - Use the pyton script run_louvain.py to execute for the SBM graphs.
 
-#include "community.h"
+#include "res/community.h"
 #include <omp.h> // for parallism
 
 using namespace std;
